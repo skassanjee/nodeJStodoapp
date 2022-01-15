@@ -4,9 +4,6 @@ const Task = require('../models/TaskModel')
 const mongodb = require('mongodb')
 
 Router.postForm = (req, res, next) => {
-
-    
-
     const task = new Task({
         todo: req.body.task
     })
@@ -20,7 +17,6 @@ Router.postForm = (req, res, next) => {
 
 Router.getForm = (req, res, next) => {
     Task.find()
-    // .populate('userId')
     .then((tasks) => {
       res.render("Form", {
         tasks: tasks,
@@ -38,3 +34,4 @@ Router.deleteFormItem = (req, res, next) => {
       .catch((err) => console.log(err));
   };
 module.exports = Router
+
