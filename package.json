@@ -1,0 +1,27 @@
+{
+  "name": "nodetodoapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skassanjee/nodeJStodoapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skassanjee/nodeJStodoapp/issues"
+  },
+  "homepage": "https://github.com/skassanjee/nodeJStodoapp#readme",
+  "dependencies": {
+    "dotenv": "^12.0.3",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.0",
+    "mongoose": "^6.1.6"
+  }
+}
