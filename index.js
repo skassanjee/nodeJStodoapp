@@ -32,6 +32,7 @@ mongoose.connect(db)
 app.use(express.static(path.join(__dirname, "public")));
 // 
 
-
-const port = process.env.port || 3000
-app.listen(port)
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`App is running on port ${ PORT }`);
+});
