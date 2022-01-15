@@ -1,0 +1,38 @@
+html, body{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+.title-main{
+    font-size: 4rem;
+}
+
+
+h1, .add-form{
+    text-align: center;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.flex{
+    border: .5px solid rgba(0, 0, 0, 0.192);
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 auto 1rem;
+    align-items: center;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+}
+
+.task{
+    width: 80%;
+    text-align: center;
+    text-decoration: underline;
+}
+.delete-button{
+
+}

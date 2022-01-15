@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Playfair+Display&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+    <title>Sahil's todo</title>
 </head>
 <body>
-    <h1>Sahil's Node ToDo App</h1>
+    <h1 class="title-main" >Sahil's Node ToDo App</h1>
 
-    <div>
+    <div class="add-form">
         <form method="post" action="/send">
             <input type="text" name="task">
             <button type="submit" name="submit">Add Task</button>
@@ -20,16 +24,22 @@
         <h1>Things I need to do:</h1>
     <div>
         <% for (let task of tasks) { %>
-            <div>
+            <div class="flex">
+            <div class="task">
                 <h1> <%= task.todo %></h1>
             </div>
     
-            <div>
+            <div class="delete-btn">
                 <form action="/delete/<%= task._id %>" method="POST">
-                    <input type="hidden" value="<%= task._id %>" name="productId">
-                    <button class="btn" type="submit">Delete</button>
+                    <div class="form-options">
+                        <input type="hidden" value="<%= task._id %>" name="productId">
+                        <button class="btn" type="submit">Delete</button>
+                    </div>
+                    
                 </form>
             </div>
+        </div>
+
         <% } %>
         <% } else { %>
             <h1>Nothing to do right now!</h1>
