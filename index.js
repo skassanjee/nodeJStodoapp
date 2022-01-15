@@ -23,7 +23,7 @@ app.use(express.json());
 app.set("view engine", "ejs");
 app.set("views", "views");
 
-const db = process.env.db
+const db = process.env.MONGODB_URI;
 
 mongoose.connect(db)
 .then( result => console.log('Connected to DB!'))
