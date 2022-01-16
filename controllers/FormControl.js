@@ -5,7 +5,7 @@ const mongodb = require('mongodb')
 
 Router.postForm = (req, res, next) => {
     const task = new Task({
-        todo: req.body.task
+        todo: req.body.taskItem
     })
 
     task.save()
