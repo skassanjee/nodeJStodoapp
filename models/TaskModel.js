@@ -5,6 +5,7 @@ const Schema = mongoose.Schema
 const TaskModel = new Schema({
     todo: {
         type: String,
+        required: true
         
     }
 })

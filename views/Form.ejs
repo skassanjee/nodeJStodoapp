@@ -14,8 +14,8 @@
     <h1 class="title-main" >Sahil's Node ToDo App</h1>
 
     <div class="add-form">
-        <form method="post" action="/send">
-            <input type="text" name="task">
+        <form method="post" name="taskForm" onsubmit="validator()" action="/send">
+            <input type="text" name="taskItem">
             <button type="submit" name="submit">Add Task</button>
         </form>
     </div>
@@ -44,5 +44,9 @@
         <% } else { %>
             <h1>Nothing to do right now!</h1>
             <% } %> 
+
+    <script src="javascript/script.js">
+
+    </script>
 </body>
 </html>

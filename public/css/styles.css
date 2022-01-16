@@ -6,6 +6,9 @@ html, body{
     font-family: 'Oxygen', sans-serif;
 }
 
+body{
+    background-color: rgba(184, 158, 124, 0.479);
+}
 
 .title-main{
     font-size: 4rem;
@@ -26,13 +29,11 @@ h1, .add-form{
     align-items: center;
     font-size: 1rem;
     overflow-wrap: break-word;
+    height: 3rem;
 }
 
 .task{
     width: 80%;
     text-align: center;
     text-decoration: underline;
-}
-.delete-button{
-
 }
